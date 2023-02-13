@@ -23,6 +23,8 @@ Package Manager: npm 9.3.1
 OS: win32 x64
 
 
+Database - MySQL 
+
 Database Name - wellBeingSurvey
 
 
