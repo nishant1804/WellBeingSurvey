@@ -106,5 +106,5 @@ Employer API :
 
 12. http://localhost:8080/QSuite/rData
 
-    To get to review per question data
+    To get total review per question data
 
