@@ -27,13 +27,13 @@ As an **employer**, you will have the ability to:
 
 ***************** **Links** **************
 
-**Video Sample :** https://vimeo.com/798377147/9395d529f0
+**Video Sample :** [click here](https://vimeo.com/798377147/9395d529f0)
 
 
-**Image Sample :** https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link
+**Image Sample :** [click here](https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link)
 
 
-**SQL File (for sample data setup) :** https://drive.google.com/drive/folders/134yZukIl5_Wh5oGW_QWbdSC1tAGbtlr1?usp=share_link
+**SQL File (for sample data setup) :** [click here](https://drive.google.com/drive/folders/134yZukIl5_Wh5oGW_QWbdSC1tAGbtlr1?usp=share_link)
 
 <br />
 
