@@ -1,85 +1,92 @@
 # WellBeingSurvey
+<br />
 
-As an employee, you will have the ability to:
+As an **employee**, you will have the ability to:
 
 1. Access the home page.
 2. Submit your survey.
 
 
-As an employer, you will have the ability to:
+As an **employer**, you will have the ability to:
 
 1. Access the survey administration panel
 2. View active and inactive questions
 3. See a total analysis of questions data
 4. Add questions of three types: 
 
-    i. Optional (where the user will be able to see a question with 2, 3, or 4 options depending on what the employer has selected).
+    i. **Optional** (where the user will be able to see a question with 2, 3, or 4 options depending on what the employer has selected).
     
-    ii. Text input (where the user will have a text area to provide a review reply) 
+    ii. **Text input** (where the user will have a text area to provide a review reply) 
     
-    iii. Rating (where the user will have the option to rate the question from 1 to 10)
+    iii. **Rating** (where the user will have the option to rate the question from 1 to 10)
     
 5. Have a table of active/inactive questions where you can edit, delete, change the status, and view reviews of questions.
 6. In the review UI, you will be able to view all replies to a specific question with detailed analysis.
 
-*********** *Links* ***********
+<br /><br />
 
-Video Sample : https://vimeo.com/798377147/9395d529f0
+***************** **Links** **************
 
-
-Image Sample : https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link
-
-
-SQL File (for sample data setup) : https://drive.google.com/drive/folders/134yZukIl5_Wh5oGW_QWbdSC1tAGbtlr1?usp=share_link
+**Video Sample :** https://vimeo.com/798377147/9395d529f0
 
 
-****** Version ***********
-
-Java - 17
-
-Spring Boot Version - 3.0.2
-
-Angular CLI: 15.1.5
-
-Node: 18.14.0
-
-Package Manager: npm 9.3.1
-
-OS: win32 x64
+**Image Sample :** https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link
 
 
-Database - MySQL 
+**SQL File (for sample data setup) :** https://drive.google.com/drive/folders/134yZukIl5_Wh5oGW_QWbdSC1tAGbtlr1?usp=share_link
 
-Database Name - wellBeingSurvey
+<br />
+
+************ **Version** **************
+
+**Java** - 17
+
+**Spring Boot Version** - 3.0.2
+
+**Angular CLI** - 15.1.5
+
+**Node:** 18.14.0
+
+**Package Manager:** npm 9.3.1
+
+**OS:** win32 x64
 
 
+**Database** - MySQL 
+
+**Database Name** - wellBeingSurvey
 
 
- *********** *Tools Used* ***********
+<br />
 
-Spring Tool Suite - version : 4.17.2.RELEASE
+ ************** **Tools Used** *****************
 
-Visual Studio Code
+**Spring Tool Suite** - version : 4.17.2.RELEASE
 
+**Visual Studio Code**
 
- *********** *Important URL's*  ***********
+<br />
 
-For Employee :
+ ************** **Important URL's**  *****************
+
+**For Employee :**
 
 1. http://localhost:4200/home
 2. http://localhost:4200/survey
 
 
-For Employer :
+**For Employer :**
 
 1. http://localhost:4200/questionsPanel
 2. http://localhost:4200/add
 
+<br />
 
+ ************** **API Used**  **************
 
- *********** *API Used*  ***********
+<br />
 
-Employee API :
+**Employee API :**
 
 1.  http://localhost:8080/RSuite/activeQuestions
 
@@ -91,7 +98,9 @@ Employee API :
     
     Return list of boolean value true means successfully saved else false means not saved
 
-Employer API :
+<br />
+
+**Employer API :**
 
 
 
