@@ -1,6 +1,18 @@
 # WellBeingSurvey
 
-Java version - 17
+*********** *Links* ***********
+
+Video Sample : https://vimeo.com/798377147/9395d529f0
+
+
+Image Sample : https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link
+
+
+****** Version ***********
+
+Java - 17
+
+Spring Boot Version - 3.0.2
 
 Angular CLI: 15.1.5
 
@@ -10,21 +22,20 @@ Package Manager: npm 9.3.1
 
 OS: win32 x64
 
-Spring Boot Version - 3.0.2
 
 Database Name - wellBeingSurvey
 
 
 
 
-*Tools Used*
+ *********** *Tools Used* ***********
 
 Spring Tool Suite - version : 4.17.2.RELEASE
 
 Visual Studio Code
 
 
-*Important URL's*
+ *********** *Important URL's*  ***********
 
 For Employee :
 
@@ -39,7 +50,7 @@ For Employer :
 
 
 
-*API Used*
+ *********** *API Used*  ***********
 
 Employee API :
 
