@@ -8,7 +8,7 @@ Video Sample : https://vimeo.com/798377147/9395d529f0
 Image Sample : https://drive.google.com/drive/folders/1EgH8TxQu-7hf2FaSajll6JaX6MDStxWp?usp=share_link
 
 
-SQL File (for sample data setup) : https://drive.google.com/file/d/1w11UB2eNakcaKEmD7orNIApfwoYw9e_W/view?usp=share_link
+SQL File (for sample data setup) : https://drive.google.com/drive/folders/134yZukIl5_Wh5oGW_QWbdSC1tAGbtlr1?usp=share_link
 
 
 ****** Version ***********
