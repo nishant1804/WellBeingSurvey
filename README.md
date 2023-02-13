@@ -1,5 +1,27 @@
 # WellBeingSurvey
 
+As an employee, you will have the ability to:
+
+1. Access the home page.
+2. Submit your survey.
+
+
+As an employer, you will have the ability to:
+
+1. Access the survey administration panel
+2. View active and inactive questions
+3. See a total analysis of questions data
+4. Add questions of three types: 
+
+    i. Optional (where the user will be able to see a question with 2, 3, or 4 options depending on what the employer has selected).
+    
+    ii. Text input (where the user will have a text area to provide a review reply) 
+    
+    iii. Rating (where the user will have the option to rate the question from 1 to 10)
+    
+5. Have a table of active/inactive questions where you can edit, delete, change the status, and view reviews of questions.
+6. In the review UI, you will be able to view all replies to a specific question with detailed analysis.
+
 *********** *Links* ***********
 
 Video Sample : https://vimeo.com/798377147/9395d529f0
