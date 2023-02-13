@@ -1,0 +1,64 @@
+<div class="container">
+	
+<header>
+    <h1 id="title">Add Question For Emplyoee Review</h1>
+</header>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label for="comment">Add the Description</label>
+        <textarea type="text" class ="form-control input-textarea" id = "questionDscp" placeholder="Enter your here..." [(ngModel)] = "question.questionDscp" name = "questionDscp"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="comment">Type of Questions need to be added ?</label>
+        <label><input name="qType" [(ngModel)] = "question.qType" value="RATING" type="radio" class="input-radio">Rating</label>
+        <label><input name="qType" [(ngModel)] = "question.qType" value="OPTIONAL" type="radio" class="input-radio">Optional</label>
+        <label><input name="qType" [(ngModel)] = "question.qType"  value="TEXT" type="radio" class="input-radio">Input Text</label>
+    </div>
+
+    <div *ngIf="question.qType === 'OPTIONAL'">
+        <label for="comment">Number of options needed in question ?</label>
+        <div class="form-group">
+            <label><input name="optionSize" [(ngModel)] = "question.optionSize"  value="2" type="radio" class="input-radio">2</label>
+            <label><input name="optionSize" [(ngModel)] = "question.optionSize"  value="3" type="radio" class="input-radio">3</label>
+            <label><input name="optionSize" [(ngModel)] = "question.optionSize"  value="4" type="radio" class="input-radio">4</label>
+        </div>
+        <div *ngIf="question.optionSize == 2"> 
+            <label for="comment">Enter options below </label>
+            <div class="form-group">
+                <input type="text" placeholder="Enter first option" class ="form-control optin" id = "optionFirst" [(ngModel)] = "question.optionFirst"  name = "optionFirst">
+                <input type="text"  placeholder="Enter second option"  class ="form-control optin" id = "optionSec" [(ngModel)] = "question.optionSec" name = "optionSec">
+            </div>
+        </div>
+        <div *ngIf="question.optionSize == 3">
+            <label for="comment">Enter options below </label>
+            <div class="form-group">
+                <input type="text" placeholder="Enter first option" class ="form-control optin" id = "optionFirst" [(ngModel)] = "question.optionFirst" name = "optionFirst">
+                <input type="text" placeholder="Enter second option" class ="form-control optin" id = "optionSec" [(ngModel)] = "question.optionSec" name = "optionSec">
+                <input type="text"  placeholder="Enter third option"  class ="form-control optin" id = "optionThird" [(ngModel)] = "question.optionThird" name = "optionThird">
+            </div>
+        </div>
+        <div *ngIf="question.optionSize == 4">
+            <label for="comment">Enter options below </label>
+            <div class="form-group">
+                <input type="text" placeholder="Enter first option" class ="form-control optin" id = "optionFirst" [(ngModel)] = "question.optionFirst" name = "optionFirst">
+                <input type="text"  placeholder="Enter second option"  class ="form-control optin" id = "optionSec" [(ngModel)] = "question.optionSec" name = "optionSec">
+                <input type="text" placeholder="Enter third option" class ="form-control optin" id = "optionThird" [(ngModel)] = "question.optionThird" name = "optionThird">
+                <input type="text"  placeholder="Enter forth option"  class ="form-control optin" id = "optionFour" [(ngModel)] = "question.optionFour" name = "optionFour">
+            </div>
+        </div>
+        
+        
+    </div>
+    <div *ngIf="question.qType === 'RATING'"><strong> Message : </strong>  User will get rating option from 1 to 10 </div>
+    <div *ngIf="question.qType === 'TEXT'"> <strong> Message : </strong>User will get  input text form to send message</div>
+    
+    <div class="form-group">
+        <input type="hidden" class ="form-control" value="1" id = "status" [(ngModel)] = "question.status" name = "status">
+    </div>
+    
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+</form>
+</div> 
+

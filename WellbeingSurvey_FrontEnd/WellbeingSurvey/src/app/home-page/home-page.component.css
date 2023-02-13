@@ -1,0 +1,37 @@
+
+
+.row-2 {
+  
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    padding: 15% 18%;
+    background-color: #fff;
+  }
+  
+  
+  .row-2 section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 30px;
+    height: 30vh;
+  }
+  
+  .row-2 section h2 {
+    font-weight: 600;
+    font-size: 1em;
+  }
+  
+  .row-2 section p {
+    font-size: 12px;
+    color: var(--veryDarkGray);
+    margin-top: 20px;
+    line-height: 22px;
+  }
+  
+

@@ -1,0 +1,271 @@
+
+<div class="card shadow border-0 mb-7 mt-7">
+    <div class="row align-items-center">
+        <div class="col-sm-12 col-12 mb-4 mb-sm-0 card-header">
+            <label>Question : </label>
+            <p class="h4 mb-0 ls-tight">{{question.questionDscp}}</p> <br>
+        <div class="table" *ngIf="question.qType === 'OPTIONAL'" >
+            <label>Option : </label>
+            <p  *ngFor="let optmp of optionArray; let f = index">
+                <strong>{{f+1}}. {{optmp}}</strong>
+            </p>
+        </div> <br>
+    </div>
+    <div class="table-responsive" *ngIf="question.qType === 'TEXT'">
+        <table class="table table-hover table-nowrap">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">S. No. </th>
+                    <th scope="col">Review Message </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rv of review; let i = index">
+                    <td >
+                        <div>
+                            {{i+1}}
+                        </div>
+                    </td>
+                    <td >
+                        <div>
+                            {{rv.reviewText}}
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table" *ngIf="question.qType === 'RATING'">
+        <div class="row g-6 mb-6">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <table class="table table-hover table-nowrap">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Rating </th>
+                            <th scope="col">Numbers </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >
+                                <label>1</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.one}}
+                                </div>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>2</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.two}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>3</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.three}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>4</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.four}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>5</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.five}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>6</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.six}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>7</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.seven}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>8</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.eight}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>9</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.nine}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td >
+                                <label>10</label>
+                            </td>
+                            <td >
+                                <div>{{rateObj.ten}}
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold text-muted text-sm d-block mb-2">Total Number of User Rated</span>
+                                <span class="h3 font-bold mb-0">{{review.length}}</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold text-muted text-sm d-block mb-2">Average Rating</span>
+                                <span class="h3 font-bold mb-0">{{avgrRate}}</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon icon-shape bg-info text-white text-lg rounded-circle">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold text-muted text-sm d-block mb-2">Highest Rated</span>
+                                <span class="h3 font-bold mb-0">{{maxrate}}</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon icon-shape bg-warning text-white text-lg rounded-circle">
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="table" *ngIf="question.qType === 'OPTIONAL'">
+        <div class="row g-6 mb-6">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <table class="table table-hover table-nowrap">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Options </th>
+                            <th scope="col">Numbers </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  *ngFor="let opt of optionMap | keyvalue">
+                            <td >
+                                <label>{{opt.key}}</label>
+                            </td>
+                            <td >
+                                <div> {{opt.value}}
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold text-muted text-sm d-block mb-2">Total Number of User Repied</span>
+                                <span class="h3 font-bold mb-0">{{review.length}}</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold text-muted text-sm d-block mb-2">Highest Option Selected</span>
+                                <span class="h3 font-bold mb-0" *ngIf="highestOptNum !== 0">
+                                    {{highestOpt}}
+                                </span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon icon-shape bg-info text-white text-lg rounded-circle">
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</div>
+

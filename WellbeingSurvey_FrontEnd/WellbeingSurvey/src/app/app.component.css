@@ -1,0 +1,33 @@
+
+  .p-btn:hover {
+    filter: saturate(0.7);
+  }
+  .s-btn {
+    color: var(--theme-col);
+    border: 2px solid var(--theme-col);
+    background-color: transparent;
+  }
+  .navbar {
+    text-decoration: none;
+    text-underline-offset: none;
+    height: 4rem;
+    padding: 2% 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a{
+      font-size: xx-large;
+      font-weight: bold;
+      cursor: pointer;
+      color: var(--text-black);
+  }
+  .l-initial{
+      color: rgb(42, 145, 147);
+  }
+
+
+
+
+
+  
